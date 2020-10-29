@@ -6,7 +6,6 @@ import json
 
 sys.path.insert(0, 'src')
 
-import env_setup
 from etl import get_data
 from features import apply_features
 
@@ -21,15 +20,12 @@ def main(targets):
     `main` runs the targets in order of data=>analysis=>model.
     '''
 
-    env_setup.make_datadir()
-    env_setup.auth()
-
     if 'data' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
 
         # make the data target
-        data = get_data(**data_cfg)
+        data = get_data(data_cfg)
 
     if 'features' in targets:
         with open('config/features-params.json') as fh:
@@ -45,7 +41,6 @@ def main(targets):
         model_build(feats, labels, **model_cfg)
 
     return
-
 
 if __name__ == '__main__':
     # run via:

@@ -1,4 +1,4 @@
 {
-    "feats": ["honorific", "last_name", "sex2bin", "Fare"],
+    "feats": ["CYLINDERS","ENGINESIZE"],
     "outfile": "data/temp/features-simple.csv"
 }

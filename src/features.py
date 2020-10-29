@@ -3,35 +3,13 @@ import pandas as pd
 
 # Custom Features
 
-def honorific(df):
-
-    hnr = (
-        df['Name']
-        .str
-        .extract(r' ([A-Z][a-z]+)\. ')
-        .squeeze()
-        .rename('Honorific')
-    )
-
-    return hnr
-
-
-def last_name(df):
-
-    lastname = (
-        df['Name']
-        .str
-        .split(', ', n=1, expand=True)
-        .loc[:, 0]
-        .rename('Lastname')
-        )
-
-    return lastname
-
-
-def sex2bin(df):
+def engine_size(df):
     
-    return df['Sex'].replace({'male': 0, 'female': 1})
+    return df['ENGINESIZE']
+
+def cylinders(df):
+    
+    return df['CYLINDERS']
 
 
 # putting features together
@@ -40,9 +18,8 @@ def sex2bin(df):
 def feature_map():
 
     fmap = {
-        "honorific": honorific,
-        "last_name": last_name,
-        "sex2bin": sex2bin
+        "engine_size": engine_size,
+        "cylinders": cylinders,
     }
 
     return fmap
@@ -50,8 +27,8 @@ def feature_map():
 
 def apply_features(df, feats, outfile=None):
 
-    labels = df['Survived']
-
+    labels = df[['CO2EMISSIONS']]
+    
     features = pd.DataFrame()
     fmap = feature_map()
     for feat in feats:
