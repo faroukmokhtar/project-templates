@@ -2,8 +2,10 @@
 
 This project illustrates structuring a DS project that approaches the
 very simple task of analysing the correlation between different aspects 
-of a car (engine_size, number of cylinders) with its fuel consumption. 
-The project explores the implementation of a very simple neural networks that tries to predict the fuel consumption of a car from its engine_size and number of cylinders. While the quality of the approach to building a model is not set to a high
+of a car (engine_size, number of cylinders) with its fuel consumption.
+
+
+The project explores the implementation of a very simple neural network that tries to predict the fuel consumption of a car from its engine_size and number of cylinders. While the quality of the approach to building a model is not set to a high
 standard, the code is just non-trivial enough to illustrate how to
 handle making a DS project rerunnable and easy to navigate.
 
