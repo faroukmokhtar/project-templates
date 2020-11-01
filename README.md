@@ -12,7 +12,9 @@ handle making a DS project rerunnable and easy to navigate.
 
 ## Retrieving the data locally:
 
-(1) To download the data, simply enter the following url and the data will be downloaded and casted in a .csv file called __FuelConsumptionCo2.csv__
+(1) To download the data, simply enter the following url and the data will be downloaded and casted in a .csv file called __FuelConsumptionCo2.csv__:
+
+https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/FuelConsumptionCo2.csv
 
 (2) Edit the file: __config/data-params.json__ to include the path/location of the downloaded data in the value of the _indir_ key
 
