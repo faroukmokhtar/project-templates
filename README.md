@@ -17,6 +17,7 @@ handle making a DS project rerunnable and easy to navigate.
 ## Retrieving the data locally:
 
 (1) To download the data, we will use !wget to download it from IBM Object Storage.
+
 `!wget -O FuelConsumption.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/FuelConsumptionCo2.csv§` 
 
 * This will download the data and cast it in a .csv file locally (remember the path for the next step)
