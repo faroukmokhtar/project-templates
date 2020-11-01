@@ -1,6 +1,6 @@
 # Example Project: Fuel Consumption Data Analysis
 
-This project template demonstrates/highlights: setting up an anaconda environment, working with local raw data, building a neural network model, analysing the model through jupyter notebook.
+__This project template demonstrates/highlights__: setting up an anaconda environment, working with local raw data, building a neural network model, analysing the model through jupyter notebook.
 
 This project illustrates structuring a DS project that approaches the
 very simple task of analysing the correlation between different aspects 
