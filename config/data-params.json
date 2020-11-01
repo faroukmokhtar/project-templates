@@ -1,4 +1,5 @@
 
 {
+    "indir": "/Users/fmokhtar/Downloads/FuelConsumptionCo2.csv",
     "outdir": "data/raw/FuelConsumption.csv"
 }

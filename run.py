@@ -25,7 +25,7 @@ def main(targets):
             data_cfg = json.load(fh)
 
         # make the data target
-        data = get_data(data_cfg)
+        data = get_data(**data_cfg)
 
     if 'features' in targets:
         with open('config/features-params.json') as fh:
