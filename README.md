@@ -1,11 +1,26 @@
 # Example Project: Fuel Consumption Data Analysis
 
+This project template demonstrates/highlights: setting up an anaconda environment, working with local raw data, building a neural network model, analysing the model through jupyter notebook.
+
 This project illustrates structuring a DS project that approaches the
 very simple task of analysing the correlation between different aspects 
 of a car (engine_size, number of cylinders) with its fuel consumption. 
-The project explores the implementation of a very simple neural networks that tries to predict the fuel consumption of a car from its engine_size and number of cylinders. While the quality of the approach to building a model is not set to a high
+The project explores the implementation of a very simple neural network that tries to predict the fuel consumption of a car from its engine_size and number of cylinders (a.k.a regression task). While the quality of the approach to building a model is not set to a high
 standard, the code is just non-trivial enough to illustrate how to
 handle making a DS project rerunnable and easy to navigate.
+
+
+
+## Retrieving the data locally:
+
+(1) `To download the data, we will use !wget to download it from IBM Object Storage.
+!wget -O FuelConsumption.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/FuelConsumptionCo2.csv§` 
+
+* This will download the data and cast it in a .csv file locally
+
+(2) Edit the file: config/data-params.json to include the location of the data in the value of the "outdir" key
+
+
 
 ## Running the project
 
