@@ -3,6 +3,6 @@ __pycache__
 .ipynb_checkpoints
 
 .DS_Store
-data/.DS_Store
-data/temp/.DS_Store
+data
 src/.DS_Store
+
