@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import sys
 import os
 import json
@@ -47,3 +45,5 @@ if __name__ == '__main__':
     # python main.py data features model
     targets = sys.argv[1:]
     main(targets)
+
+print('finished')
